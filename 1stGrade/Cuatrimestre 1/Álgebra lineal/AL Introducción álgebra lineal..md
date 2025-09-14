@@ -20,7 +20,3 @@
 ## Productos escalares y más (no sé el name oficial)
 ##### De qué va
 Meter todas las operaciones en [[#Cosas que sabemos y que vamos a ver]] con mierdas muy raras, aplicarlas a matrices, polinomios y más.
-
-# Temario
-### Matrices
-1. Tabla de elementos ordenados.

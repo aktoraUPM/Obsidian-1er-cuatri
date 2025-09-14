@@ -26,7 +26,7 @@ Sean $f,g$ funciones reales y $\lambda \in \mathbb{R}$.
 	- No es **conmutativa**. $(f \circ g) \neq (g \circ f)$.
 	- ***CUIDADO AL DOMINIO***. $\mathrm{Dom}(f \circ g) = \{\text{"Teniendo en cuenta los dominios de las funciones originales"\}}$.
 ##### Comprobar si una función es inyectiva
-Ver [[Tema 0. Preliminares#Funciones inyectivas, sobreyectivas y biyectivas]].
+Ver [[CI Tema 0. Preliminares#Funciones inyectivas, sobreyectivas y biyectivas]].
 - $f$ es inyeciva si $f(x) = f(y) \implies x = y$. Partiendo de esta definición se puede **comprobar** si una función es inyectiva. 
 - _Ej:_$$
 f(x) = \frac{x+1}{x-1} \implies \frac{x_{1} + 1}{x_{1} - 1} = \frac{x_{2}+1}{x_{2}-1} \implies (x_{1}+ 1)(x_{2} - 1) = (x_{2}+1)(x_{1}-1) \implies \cancel{x_{1}x_{2}} + x_{2} - x_{1} \cancel{-1} = \cancel{x_{1}x_{2}} +x_{1} -x_{2} \cancel{-1} \implies 2x_{1} = 2x_{2} \implies x_{1} = x_{2} \; \;\text{ La función es inyectiva.}$$

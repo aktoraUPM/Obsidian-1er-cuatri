@@ -91,5 +91,3 @@ Sea $A \subset \mathbb{R}$.
 2. Igualmente, $A$ está acotado **inferiormente** si $\exists n \in \mathbb{R} : n \leq a, \forall a \in A$, y $n$ es una **cota inferior**. La cota inferior más grande posible es el **ínfimo**, $\mathrm{inf}(A)$, y si $\mathrm{inf}(A) \in A$, entonces es el **mínimo de $A$**.
 3. $A$ está **acotado** si lo está superior e inferiormente.
 ---
-
-### Falta la función $f(x) = |x|$, incluir en en [[Tema 1. Funciones reales, límites y continuidad.]]
