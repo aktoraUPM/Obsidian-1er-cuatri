@@ -8,21 +8,21 @@
         "type": "tabs",
         "children": [
           {
-            "id": "909320802cd611cb",
+            "id": "2d64e6072dbba01a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1stGrade/Cuatrimestre 1/Cálculo infinitesimal/CI Tema 1. Funciones reales, límites y continuidad..md",
+                "file": "1stGrade/Cuatrimestre 1/Expresión gráfica/Concepción espacial/EG_CE 0.1 Presentación.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CI Tema 1. Funciones reales, límites y continuidad."
+              "title": "EG_CE 0.1 Presentación"
             }
           },
           {
-            "id": "90842ffb9ed540fe",
+            "id": "909320802cd611cb",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -183,12 +183,13 @@
       "bases:Create new base": false
     }
   },
-  "active": "909320802cd611cb",
+  "active": "2d64e6072dbba01a",
   "lastOpenFiles": [
-    "1stGrade/Cuatrimestre 1/Cálculo infinitesimal/CI Tema 0. Preliminares.md",
-    "1stGrade/Cuatrimestre 1/Cálculo infinitesimal/CI Tema 1. Funciones reales, límites y continuidad..md",
-    "1stGrade/Cuatrimestre 1/Expresión gráfica/Concepción espacial/EG_CE 0.1 Presentación.md",
     "1stGrade/Cuatrimestre 1/Expresión gráfica/Concepción espacial/EG_CE 0.0 Comandos AutoCAD.md",
+    "1stGrade/Cuatrimestre 1/Expresión gráfica/Concepción espacial/EG_CE 0.1 Presentación.md",
+    "Pitochin.md",
+    "1stGrade/Cuatrimestre 1/Cálculo infinitesimal/CI Tema 1. Funciones reales, límites y continuidad..md",
+    "1stGrade/Cuatrimestre 1/Cálculo infinitesimal/CI Tema 0. Preliminares.md",
     "1stGrade/Cuatrimestre 1/Física I/F1 Tema 1. Análisis dimensional..md",
     "1stGrade/Cuatrimestre 1/Álgebra lineal/AL Introducción álgebra lineal..md",
     "1stGrade/Cuatrimestre 1/Álgebra lineal/AL Tema 0. Repaso..md",
