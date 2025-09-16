@@ -1,0 +1,19 @@
+{
+  "auto-displaystyle-inline-math:disable": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "Y"
+    }
+  ],
+  "auto-displaystyle-inline-math:enable": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "Y"
+    }
+  ]
+}

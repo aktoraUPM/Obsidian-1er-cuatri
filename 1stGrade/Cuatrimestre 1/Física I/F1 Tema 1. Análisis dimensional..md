@@ -42,3 +42,5 @@ $$
 - Un sistema de unidades es coherente con un conjunto de leyes físicas cuando estas se verifican al sustituir sustituir en cada caso particular los símbolos por sus respectivas medidas concretas.
 	_Ej._ Considerando $F = ma$, un sistema coherente sería el SI, que utiliza como unidades $(N,m,kg,s)$; tomando que una fuerza de $1N$ ejerce, sobre $1kg$ de masa, una aceleración de $1m/s^{2}$, entonces se cumple que $F = ma \Rightarrow 1N = 1kg \cdot 1m/s^{2}$.
 	Si, sin embargo, se utilizase el **kilopondio** $kp$ como unidad de fuerza, daría lugar al sistema $(kp,m,kg,s)$, que es incoherente, puesto que partiendo de que $1kp = \displaystyle{\frac{1}{9.8N}}$, no es cierto que $F = ma \Rightarrow 1kp = \displaystyle{\frac{1}{9.8N}} = 1kg \cdot 1m/s^{2}$.
+
+

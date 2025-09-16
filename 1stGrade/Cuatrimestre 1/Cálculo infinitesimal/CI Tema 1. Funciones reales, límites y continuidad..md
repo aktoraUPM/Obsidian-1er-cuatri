@@ -36,4 +36,35 @@ Sea $f$ una función real e $I \in \mathrm{Dom}(f)$ un intervalo.
 1. $f$ es **creciente** en $I$ si $f(x_{1}) \leq f(x_{2}), \forall x_{1},x_{2} \in I : x_{1} \leq x_{2}$.
 2. $f$ es **decreciente** en $I$ si $f(x_{1}) \geq f(x_{2}), \forall x_{1},x_{2} \in I : x_{1} \leq x_{2}$.
 3. Si en las definiciones anteriores se da que $f(x_{1}) \neq f(x_{2})$, se dice que $f$ es **estrictamente** creciente o decreciente, respectivamente.
-4. $f$ es **constante** enn $I$ si $f(x_{1}) = f(x_{2}), \forall x_{1},x_{2} \in I$, es decir, _es creciente y decreciente a la vez_.
+4. $f$ es **constante** en $I$ si $f(x_{1}) = f(x_{2}), \forall x_{1},x_{2} \in I$, es decir, _es creciente y decreciente a la vez_.
+##### Acotación de funciones
+Ver [[CI Tema 0. Preliminares#Acotación de intervalos]]
+Sea $f: \mathrm{Dom}(f) \longrightarrow \mathbb{R}$ y $A \subset \mathrm{Dom}(f)$.
+- $f$ está **acotada superiormente** en $A$ si $\exists M \in \mathbb{R} : f(x) \leq M, \forall x \in A$. $M$ es una **cota superior de $f$**.
+- $f$ está **actoada inferiormente en $A$** si $\exists m \in \mathbb{R} : f(x) \geq M, \forall x \in A$. $m$ es una **cota inferior** de $f$.
+- $f$ está acotada si lo está **inferior y superiormente**.
+##### Extremos
+Sea $f$ una función real y $a \in \mathrm{Dom}(f)$.
+- $a$ es un **máximo global** si $f(x) \leq f(a), \forall x \in \mathrm{Dom}(f)$.
+- $a$ es un **mínimo global** si $f(x) \geq f(a), \forall x \in \mathrm{Dom}(f)$.
+- $a$ es un **máximo relativo** si $\exists \delta > 0 : f(x) \leq f(a),  \forall x \in (a - \delta, a + \delta)$.
+- $a$ es un **mínimo relativo** si $\exists \delta > 0 : f(x) \geq f(a),  \forall x \in (a - \delta, a + \delta)$.
+##### Simetrías
+Sea $f$ una función real y $P \in \mathbb{R} \backslash \{0\}$.
+- $f$ presenta **simetría par** si $f(x)=f(-x), \forall x \in \mathrm{Dom}(f)$.
+- $f$ presenta **simetría impar** si $f(x) = -f(-x), \forall x \in \mathrm{Dom}(f)$.
+- $f$ es **periódica** si $f(x) = f(x+P), \forall x \in \mathrm{Dom}(f)$, y se llama **periodo** a $P$.
+# 1.2 Límites de funciones
+##### Definición de límite
+Sea $f: \mathrm{Dom}(f) \longrightarrow \mathbb{R}$, $I \subset \mathrm{Dom}(f), x_{0} \in I, y_{0} \in \mathbb{R}$.
+- Se dice que el **límite de $f$ cuando $x \to x_{0}$** es $y_{0}$, denotado como $\lim_\limits{ x \to x_{0}} f(x) = y_{0}$, si se cumple que $$
+\forall \varepsilon, \exists \delta : 0 < \left| x - x_{0} \right| < \delta \implies 0 < \left| f(x) - y_{0} \right| < \varepsilon 
+$$
+- *Ej. 1.* Comprobar que $\displaystyle{\lim_\limits{ x \to 0 } \frac{3x + 1}{2}} = \frac{1}{2}$.
+	1. Formular la pregunta: sustituir valores concretos en la definición del límite.
+	Sea $\varepsilon > 0$, ¿$\exists\delta > 0 : 0< |x - 0| < \delta \implies 0 < \left| \frac{3x + 1}{2} - \frac{1}{2} \right| < 0$? $$
+\begin{gather}
+\left| \frac{3x+1}{2} + \frac{1}{2} \right| = \left| \frac{3x}{2} \right| = \frac{3}{2} |x| \implies \frac{3}{2} |x| < \varepsilon \implies |x| < \frac{2\varepsilon}{3}, \text{recordando que } 0 < |x| < \delta \\
+\end{gather}
+$$
+	$\left. \begin{array}{l} |x| < \frac{2\varepsilon}{3} \\ |x| < \delta \end{array} \right\}$ Es necesario ahora tomar un valor arbitrario de $\delta$ para continuar, así que lo más sencillo es suponer que $\delta = \frac{2\varepsilon}{3}$.
