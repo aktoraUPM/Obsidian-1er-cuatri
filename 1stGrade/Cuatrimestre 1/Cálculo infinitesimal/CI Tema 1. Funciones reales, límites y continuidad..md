@@ -67,4 +67,4 @@ $$
 \left| \frac{3x+1}{2} + \frac{1}{2} \right| = \left| \frac{3x}{2} \right| = \frac{3}{2} |x| \implies \frac{3}{2} |x| < \varepsilon \implies |x| < \frac{2\varepsilon}{3}, \text{recordando que } 0 < |x| < \delta \\
 \end{gather}
 $$
-	$\left. \begin{array}{l} |x| < \frac{2\varepsilon}{3} \\ |x| < \delta \end{array} \right\}$ Es necesario ahora tomar un valor arbitrario de $\delta$ para continuar, así que lo más sencillo es suponer que $\delta = \frac{2\varepsilon}{3}$.
+	$\left. \begin{array}{l} |x| < \frac{2\varepsilon}{3} \\ |x| < \delta \end{array} \right\}$ Es necesario ahora tomar un valor arbitrario de $\delta$ para continuar, así que lo más sencillo es suponer que $\delta = \frac{2\varepsilon}{3}$, pues ya se sabe que es también menor que $|x|$.
