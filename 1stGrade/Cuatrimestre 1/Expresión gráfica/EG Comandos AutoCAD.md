@@ -17,6 +17,7 @@
 ##### `punto`
 - Genera un punto en las coordenadas especificadas.
 - Para cambiar el tipo de punto, ver [tipopunto]([[#`tipopunto`]])
+- Para capturar coordenadas de un punto, en [[#Shift + Click derecho.]] > filtros para puntos >
 ##### `simetria`
 - Hace una simetría de algunos elementos a partir de un eje.
 ##### `tipopunto`
@@ -29,12 +30,15 @@
 	3. `Intersección` (según el momento)
 - Algunos q a mi me parecen bien
 	4. `Tangencia`
+##### `scp`
+- Sistema de Coordenadas Personal (un LCS).
+- Especificar elementos que definen el plano XY
 # Menús contextuales
 ##### Desactivar la data q te pone al lado del ratón:
 Lorca dice que es mejor, yo tengo mis dudas.
 -  Tres líneas abajo a la derecha > Entrada dinámica.
 - Encender y apagar.
 - Volver a quitar el símbolo de activar / desactivar.
-##### Ctrl + Click derecho.
+##### Shift + Click derecho.
 - Menú contextual para hacer un **único** rastreo de referencia a objetos.
 -  `Desde` permite utilizar un punto como referencia a coordenadas relativas.
