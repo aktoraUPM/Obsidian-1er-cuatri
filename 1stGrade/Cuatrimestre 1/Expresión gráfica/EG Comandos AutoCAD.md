@@ -12,6 +12,7 @@
 - **Uso**: elegir modo
 - Modos:
 	- `D` Distancia.
+##### `directriz`
 ##### `empalme`
 - **Descripción**: 
 ##### `punto`
