@@ -10,7 +10,9 @@ Los apuntes están hechos en **Obsidian**, y si bien es posible exportarlos a PD
   winget install Obsidian.Obsidian
   ```
   Y aceptar la descarga cuando lo pida (escribiendo `Y + Enter`, no sé si en Windows es suficiente con sencillamente `Enter` como en APT).
-### Los propios apuntes
+### Uso de los apuntes
+##### Propiedad
+- Son mis apuntes, pero me importa poco donde acaben, si no, no los subía a GitHub. Úsense con total libertad.
 ##### Descarga
 - A través de esta misma página de GitHub, en el [enlace de descarga del botón verde](https://github.com/aktoraUPM/Obsidian-1er-cuatri/archive/refs/heads/master.zip).
 - Con **Git**, para quien no sepa qué es, viene instalado en Mac y Linux, en Windows se puede instalar también fácilmente con winget a través de
@@ -21,7 +23,6 @@ Los apuntes están hechos en **Obsidian**, y si bien es posible exportarlos a PD
   ```
   git clone https://github.com/aktoraUPM/Obsidian-1er-cuatri.git
   ```
-##### Abrir los apuntes
-Al abrirlos en Obsidian, solicitará activar los plugins. Son todos descargados de la página de **Community plugins** de Obsidian, son perfectamente seguros, por lo que basta con darle a _Trust the author_ al importar esta vault.
-Es necesario utilizar al menos `TikZJaz`, hay gráficos que se tienen que renderizar con TikZ y si no solo serán bloques largos y feos de código encabezados por un `tikz`.
-Los macros para $\LaTeX$ del plugin *LaTeX Suite* están personalizados, pero creo que no son malas elecciones. Tampoco están optimizados ni nada por el estilo, son los que se me iban ocurriendo cuando los necesitaba.
+##### Dependencias en Obsidian
+- [**TikZJax**](obsidian://show-plugin?id=obsidian-tikzjax). Sin este plugin de Obsidian, los gráficos en TikZ no se renderizan, es necesario instalarlo en *Options > Community plugins > Browse > TikZJax > Install + Enable*. Si no se habilita, sólo aparecerán bloques largos y feos de cógigo encabezados por un `tikz`.
+- El repositorio incluye mis macros personalizados para [**Latex Suite**](obsidian://show-plugin?id=obsidian-latex-suite) (plugin de macros para LaTeX), si se quiere editar los apuntes es recomendable considerar si se quieren eliminar o no.

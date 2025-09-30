@@ -58,7 +58,7 @@
 ```
 - **Órbita y trayectoria**.
 	- La **órbita** es el conjunto de puntos en el espacio que ocupa un móvil en su movimiento. Se expresa en forma de ecuación general, $F(x,y) = 0$.
-	- La **trayectoria** es cualquier determinación *paramétrica* de la órbita, ${} \left\{ \begin{array} l x(p) = f_1(p) \\ y(p) = f_2(p) \\ z(p) = f_{3}(p) \end{array} \right. {}$, donde $p$ es un parámetro. Es común utilizar el **tiempo** $t$ como parámetro.
+	- La **trayectoria** es cualquier determinación *paramétrica* de la órbita, $\left\{ \begin{array} l x(p) = f_1(p) \\ y(p) = f_2(p) \\ z(p) = f_{3}(p) \end{array} \right.$, donde $p$ es un parámetro. Es común utilizar el **tiempo** $t$ como parámetro.
 ##### Vector velocidad
 - Existen varios vectores para indicar la velocidad, que es el cambio de posición respecto al tiempo.
 	- **Velocidad media** del móvil en un periodo de tiempo $\Delta t$. $\vec{v}_{med} = \displaystyle{\frac{\Delta \vec{r}}{\Delta t} = \frac{\vec{r}(t_{2})-\vec{r}(t_{1})}{t_{2} - t_{1}}}$.
@@ -85,3 +85,80 @@
 - Poniendo como caso particular $a_{x} = 0$, $$ \begin{gather} \boxed{v_{x}(t) = v_{x}(t_{0}) + a_{x}(t-t_{0})} \\[7px] x(t) = x(t_{0}) + v_{x}(t_{0})(t-t_{0}) + \int_{t_{0}}^{t} a_{x}(t-t_{0}) \,dt   = \boxed{x(t_{0}) + v_{x}(t-t_{0}) + \frac{1}{2}a(t-t_{0})^{2}} \end{gather} $$
 # 2.3 Movimiento circular general
 ##### Magnitudes cinemáticas angulares
+- **Posición angular** $\varphi$. Ángulo de $\vec{r}$ con un eje coordenado. (SI) $[\varphi] = rad = \frac{m}{m} = 1$. 
+- **Velocidad angular** $\omega = \frac{d \varphi}{dt}$.  ${} [\omega] = rad \, s ^{-1} {}$.
+- **Aceleración angular** $\alpha = \frac{d \omega}{dt} = \frac{d^{2} \varphi}{dt^{2}}$. $[\alpha] = rad \, s ^{-2}$.
+##### Relación entre magnitudes cinemáticas lineales y angulares
+- Determinada por la condición $l = \varphi R \implies v = \frac{d \varphi}{dt} R = \omega R \implies a = \frac{d \omega}{dt} R = \alpha R$ 
+##### Distintos movimientos angulares
+- **Movimiento circular general**. Donde $\alpha = \alpha (t)$.
+- **Movimiento circular uniforme**. Donde $\alpha (t) = 0 \implies \frac{d \omega}{dt} = 0$. En este, se definen una serie de magnitudes adicionales.
+	- **Periodo** $T = \frac{2\pi}{\omega}$, $[T] = s$.
+	- **Frecuencia** $f = \frac{1}{T}$, $[f] = s ^{-1} = \text{Hz}$.
+---
+# 2.4 Movimiento relativo. Transformaciones de Galileo
+##### Interacción de varios sistemas de referencia
+- En la mecánica clásica, se toman **el tiempo y el espacio como absolutos**, lo que implica que sea quien sea el espectador, este va a ver siempre los **mismos cambios en espacio y en tiempo** que cualquier otro observador en algún punto del espacio.
+- Considerando dos sistemas de referencia $SR_{1}$ y $SR_{2}$, se da que:
+	1. $\vec{r}_{1} = \vec{r}_{12} + \vec{r}_{2}$, siendo $\vec{r}_{12}$ el vector de **posición relativo** de $SR_{2}$ frente a $SR_{1}$. De esto se concluye que, efectivamente, el espacio es absoluto.
+	2. $\displaystyle{ \frac{d \vec{r}_{1}}{dt_{1}} = \vec{v}_{1} = \vec{v}_{12} + \vec{v}_{2} = \vec{v}_{12} + \frac{d\vec{r}_{2}}{dt_{2}} }$, y el tiempo es absoluto, $t_{1} = t_{2} = t \implies \vec{v}_{1} = \vec{v}_{12} + \vec{v}_{2}$.
+	3. De forma análoga a la velocidad, $\vec{a}_{1} = \vec{a}_{12} + \vec{a}_{2}$.
+```tikz
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+
+\begin{document}
+
+% Ángulo de vista
+\tdplotsetmaincoords{70}{110}
+
+\begin{tikzpicture}[tdplot_main_coords, scale=2.5]
+
+  % Ejes del sistema S (fijo)
+  \draw[->] (0,0,0) -- (3,0,0) node[anchor=north east]{$x_1$};
+  \draw[->] (0,0,0) -- (0,3,0) node[anchor=north west]{$y_1$};
+  \draw[->] (0,0,0) -- (0,0,2) node[anchor=south]{$z_1$};
+  \filldraw[gray!60] (0,0,0) circle (0.8pt) node[above left]{$O_1$};
+
+  % Origen del sistema S': O'
+  \coordinate (Oprime) at (0.5,2,1.5);
+
+  % Vector de posición relativa entre S y S'
+  \draw[->, thick, red] (0,0,0) -- (Oprime) node[midway, above left]{$\vec{r}_{12}$};
+
+  % Ejes del sistema S' (móvil)
+  \draw[->, thick, blue!30] (Oprime) -- ++(1,0,0) node[anchor=north east]{$x_2$};
+  \draw[->, thick, blue!30] (Oprime) -- ++(0,1,0) node[anchor=north west]{$y_2$};
+  \draw[->, thick, blue!30] (Oprime) -- ++(0,0,1) node[anchor=south]{$z_2$};
+  % Etiqueta de O'
+  \filldraw[blue!35] (Oprime) circle (0.8pt) node[below right]{$O_2$};
+  
+  % Punto P
+  \filldraw[green] (2,1.5,0.5) circle (0.8pt) node[below left]{$P$};
+
+  % Vector r_1 y r_2
+  \draw[->, red!50] (0,0,0) -- (2,1.5,0.5) node[midway, below left]{$\vec{r}_1$};
+  \draw[->, blue!20] (Oprime) -- (2,1.5,0.5) node[midway, below right]{$\vec{r}_2$};
+
+  % Punto marcado en el origen de S'
+  % \filldraw[red] (Oprime) circle (1.2pt);
+
+\end{tikzpicture}
+
+\end{document}
+
+```
+##### Caso de interés: movimiento relativo uniforme entre $SR$
+- En este caso, $\frac{d\vec{v}_{12}}{dt} = \vec{a}_{12} = 0$.
+- Relevancia: las **leyes de la mecánica** son **iguales** en los dos sistemas de referencia.
+	La mecánica Newtoniana se basa en las **aceleraciones** en sus leyes, y en este caso particular, $\vec{a}_{1} = \underset{0}{\cancel{\vec{a}_{12}}} + \vec{a}_{2} = \vec{a}_{2}$.
+- En un caso **general**, las ecuaciones de transformación toman la siguiente forma. $$ \begin{gather} \vec{r}_{1} = \vec{r}_{12} + \vec{r}_{2} \overset{*}{=} [\vec{r}_{12}(t_{0}) + \vec{v}_{12}(t - t_{0})] + r_{2}(t) \\[7px] \overset{*}{=} \vec{v}_{12} = \frac{d\vec{r}_{12}}{dt} \implies \int_{\vec{r}(t_{0})}^{\vec{r}(t)} d\vec{r}_{12} = \int_{t_{0}}^{t} \vec{v}_{12}(t) \:dt \implies \vec{r}_{12}(t) - \vec{r}_{12}(t_{0}) = \vec{r}_{12}(t_{0}) + \vec{v}_{12}(t - t_{0}) \overset{*}{=}\end{gather} $$
+---
+# 2.5 Leyes de Newton
+##### Concepto de fuerza
+- Magnitud vectorial utilizada para **cuantificar la interacción entre dos sistemas**.
+- Obedecen el álgebra vectorial, por lo que un sistema de fuerzas da lugar a una **fuerza resultante** $F = \sum\limits_{i = 1}^{n} F_{i}$.
+##### Primera ley: Ley de inercia
+>Un cuerpo sometido a **ninguna interacción** mantiene **constante** su **vector velocidad**. $$ \vec{F} = 0 \iff \vec{v} = \text{cte} \iff \vec{a} = 0 $$
+- Establece en qué sistemas de referencia son válidas las leyes de Newton: los **sistemas de referencia inerciales SRI**.
+  Si, por ejemplo, en un sistema se puede apreciar cambio en otro sistema sin que a este segundo, aparentemente, lo afecte ninguna fuerza, se dirá que no es un SRI, y que por tanto no se pueden aplicar las leyes de Newton sobre él.
