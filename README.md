@@ -2,7 +2,7 @@
 ### Descripción
 Estos son mis apuntes del primer cuatrimestre de Ingeniería Electrónica Industrial y Automática en la Universidad Politécnica de Madrid.
 ### Editor: Obsidian
-Los apuntes están hechos en **Obsidian**, y si bien es posible exportarlos a PDF o abrirlos en cualquier visor de MarkDown, lo mejor es visualizarlos utilizando esta misma aplicación, pues utilizo plugins de esta para editarlos, además de que incluye alguna gráfica en TikZ que no se puede ver a través de MarkDown común.
+Los apuntes están hechos en **[Obsidian](https://obsidian.md/)**, y si bien es posible exportarlos a PDF o abrirlos en cualquier visor de MarkDown (salvo los gráficos de TikZ y/o que no tenga renderizado de LaTeX), lo mejor es visualizarlos utilizando esta misma aplicación, pues utilizo plugins de esta para editarlos, además de que incluye alguna gráfica en TikZ que no se puede ver a través de MarkDown común.
 ##### Instalación de Obsidian
 - A través del instalador normal, que se puede obtener [aquí](https://obsidian.md/download).
 - **(Opción más rápida)** A través del instalador `winget` del CMD. Buscando *cmd* en las aplicaciones de Windows, se abre una ventana de terminal. Ahí, si se tiene instalado, basta con ejecutar 

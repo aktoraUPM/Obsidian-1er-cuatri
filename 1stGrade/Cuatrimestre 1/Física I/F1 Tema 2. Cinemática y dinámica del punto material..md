@@ -155,6 +155,7 @@
 - En un caso **general**, las ecuaciones de transformación toman la siguiente forma. $$ \begin{gather} \vec{r}_{1} = \vec{r}_{12} + \vec{r}_{2} \overset{*}{=} [\vec{r}_{12}(t_{0}) + \vec{v}_{12}(t - t_{0})] + r_{2}(t) \\[7px] \overset{*}{=} \vec{v}_{12} = \frac{d\vec{r}_{12}}{dt} \implies \int_{\vec{r}(t_{0})}^{\vec{r}(t)} d\vec{r}_{12} = \int_{t_{0}}^{t} \vec{v}_{12}(t) \:dt \implies \vec{r}_{12}(t) - \vec{r}_{12}(t_{0}) = \vec{r}_{12}(t_{0}) + \vec{v}_{12}(t - t_{0}) \overset{*}{=}\end{gather} $$
 ---
 # 2.5 Leyes de Newton
+### 2.5.1 Nociones básicas y enunciado de las leyes
 ##### Concepto de fuerza
 - Magnitud vectorial utilizada para **cuantificar la interacción entre dos sistemas**.
 - Obedecen el álgebra vectorial, por lo que un sistema de fuerzas da lugar a una **fuerza resultante** $F = \sum\limits_{i = 1}^{n} F_{i}$.
@@ -162,3 +163,18 @@
 >Un cuerpo sometido a **ninguna interacción** mantiene **constante** su **vector velocidad**. $$ \vec{F} = 0 \iff \vec{v} = \text{cte} \iff \vec{a} = 0 $$
 - Establece en qué sistemas de referencia son válidas las leyes de Newton: los **sistemas de referencia inerciales SRI**.
   Si, por ejemplo, en un sistema se puede apreciar cambio en otro sistema sin que a este segundo, aparentemente, lo afecte ninguna fuerza, se dirá que no es un SRI, y que por tanto no se pueden aplicar las leyes de Newton sobre él.
+##### Masa inerte y segunda ley
+- El concepto de inercia se ve reflejado en la **masa inerte**, la magnitud escalar que lo cuantifica.
+- En un SRI, la masa inerte de las partículas es la **constante de proporcionalidad** entre la **fuerza** aplicada al cuerpo y la **aceleración** que este experimenta. $$ \vec{F} = m \vec{a} $$
+##### Tercera ley
+>Dos partículas con interacción de contacto ejercen fuerzas **la una sobre la otra**, de igual módulo y dirección, pero de distinto sentido.
+##### Fuerzas notables de la mecánica
+1. **Fuerzas internas**. Entre elementos de del propio sistema, en contraposición a las **externas**, entre elementos del sistema y el resto del universo.
+2. **Fuerzas de ligadura**. Representan restricciones al movimiento del sistema.
+	- **Fuerza normal** de un plano. Reacción entre un 
+	- **Tensión** de una cuerda
+3. **Fuerzas de rozamiento**.
+	- **Rozamiento estático**. No implica desplazamiento relativo entre las superficies en contacto. No tiene valor fijo, pero sí valor máximo. $$ F_{R}^{(e)} = \mu_{e} N $$
+	  Donde $\mu_{e}$ es el **coeficiente de rozamiento estático**, y $N$ la fuerza de reacción normal entre superficies en contacto.
+	- **Rozamiento dinámico**. Implica desplazamiento relativo entre las superficies en contacto. $$ F_{R} = \mu N = \mu_{d} N$$
+	  Tal que $\mu$ ó $\mu_{d}$ es el **coeficiente de rozamiento dinámico**.
