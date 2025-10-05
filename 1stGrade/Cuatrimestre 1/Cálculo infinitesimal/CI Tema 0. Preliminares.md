@@ -31,7 +31,7 @@
 5. ***Leyes de Morgan***. $\left\{ \begin{array}{l} (A \cup B)^c = A^c \cap B^c \\ (A \cap B)^c = A^c \cup B^c \end{array} \right.$
 	Sea $x \in (A \cup B)^c$ $\Leftrightarrow x \notin A \textrm{ y } x \notin B$ $\Leftrightarrow x \in A^c \textrm{ y } x \in B^c$ $\Leftrightarrow x \in A^c \cap B^c$
 	Sea $x \in (A \cap B)^c$ $\Leftrightarrow x \notin A \textrm{ ó } x \notin B$ $\Leftrightarrow x \in A^c \textrm{ ó } x \in B^c$ $\Leftrightarrow x \in A^c \cup B^c$
-
+---
 # 0.2 Correspondencias y funciones
 ##### Correspondencia
 1. Una correspondencia $f$ de $A$ y $B$ es una **terna** $(A, B, G_f)$, donde $A$ y $B$ son conjuntos y $G_f$ es un subconjunto $A \times B$. Se denomina $f: A \longrightarrow B$.
@@ -73,6 +73,7 @@ b \mapsto 3 \\
 c \mapsto 2
 \end{array}
 $$
+---
 # 0.3 Conjuntos numéricos
 ##### Conjuntos numéricos relevantes
 1. $\mathbb{N} = \{1,2,3 \dots\}$ Números naturales.

@@ -54,6 +54,7 @@ Sea $f$ una función real y $P \in \mathbb{R} \backslash \{0\}$.
 - $f$ presenta **simetría par** si $f(x)=f(-x), \forall x \in \mathrm{Dom}(f)$.
 - $f$ presenta **simetría impar** si $f(x) = -f(-x), \forall x \in \mathrm{Dom}(f)$.
 - $f$ es **periódica** si $f(x) = f(x+P), \forall x \in \mathrm{Dom}(f)$, y se llama **periodo** a $P$.
+---
 # 1.2 Límites de funciones
 ##### Definición de límite
 Sea $f: \mathrm{Dom}(f) \longrightarrow \mathbb{R}$, $I \subset \mathrm{Dom}(f), x_{0} \in I, y_{0} \in \mathbb{R}$.
@@ -62,12 +63,8 @@ Sea $f: \mathrm{Dom}(f) \longrightarrow \mathbb{R}$, $I \subset \mathrm{Dom}(f),
 $$
 - *Ej. 1.* Comprobar que $\displaystyle{\lim_\limits{ x \to 0 } \frac{3x + 1}{2}} = \frac{1}{2}$.
 	1. Formular la pregunta: sustituir valores concretos en la definición del límite.
-	Sea $\forall \varepsilon > 0$, ¿$\exists\delta > 0 : 0< |x - 0| < \delta \implies 0 < \left| \frac{3x + 1}{2} - \frac{1}{2} \right| < 0$? $$
-\begin{gather}
-\left| \frac{3x+1}{2} - \frac{1}{2} \right| = \left| \frac{3x}{2} \right| = \frac{3}{2} |x| \implies \frac{3}{2} |x| < \varepsilon \implies |x| < \frac{2\varepsilon}{3}, \text{recordando que } 0 < |x| < \delta \\
-\end{gather}
-$$
-	2. $\left. \begin{array}{l} |x| < \frac{2\varepsilon}{3} \\ |x| < \delta \end{array} \right\}$ Es necesario ahora tomar un valor arbitrario de $\delta$ para continuar, así que lo más sencillo es suponer que $\delta = \frac{2\varepsilon}{3}$, pues ya se sabe que es también menor que $|x|$.
+	Sea $\forall \varepsilon > 0$, ¿$\exists\delta > 0 : 0< |x - 0| < \delta \implies 0 < \left| \frac{3x + 1}{2} - \frac{1}{2} \right| < 0$? $$ \begin{gather} \left| \frac{3x+1}{2} - \frac{1}{2} \right| = \left| \frac{3x}{2} \right| = \frac{3}{2} |x| \implies \frac{3}{2} |x| < \varepsilon \implies |x| < \frac{2\varepsilon}{3}, \text{recordando que } 0 < |x| < \delta \\ \end{gather} $$
+	2. $\left. \begin{array}{l} |x| < \frac{2\varepsilon}{3} \\ |x| < \delta \end{array} \right\}$, Es necesario ahora tomar un valor arbitrario de $\delta$ para continuar, así que lo más sencillo es suponer que $\delta = \frac{2\varepsilon}{3}$, pues ya se sabe que es también menor que $|x|$.
 	3. Para comprobar entonces que todo esto cumple la existencia de $\varepsilon$, basta con retomar la expresión recién obtenida.
 	$$ |x| < \frac{2}{3} \varepsilon \implies \left|\frac{3x+1}{2} - \frac{1}{2} \right| = \frac{3}{2} |x| < \cancel{\frac{3}{2}} \cancel{\frac{2}{3}} \varepsilon$$
 - *Ej. 2*. Des Comprobar que $\lim_\limits{ x \to 1 } (x^{2}+2x+1) = 4$.
@@ -131,4 +128,66 @@ Sea $\lambda \in \mathbb{R}$ y supongamos que existen ${} \lim_\limits{ x \to x_
 	6. **Regla tomando logaritmos**. Válida para $0^0$, $1^\infty$ y $\infty^{0}$.  *Nota:  ${} \ln(x) \implies \log(x) {}$ y $\log(x) \implies \log_{10}(x)$*.
 	   _Ej._ $\lim_\limits{ x \to 0^+ } x^{\frac{2}{3 - \log(x)}} (=0^0)$. $$ \lim_\limits{ x \to 0^+ } x^{\frac{2}{3 - \log(x)}} = \lim_\limits{ x \to 0^+ } e^{\log\left( x^{\frac{2}{3-\log(x)}} \right)} = \lim_\limits{ x \to 0^+ } e^{\frac{2}{3-\log(x)} \cdot \log(x)} = e^{\lim_\limits{ x \to 0^+ }\frac{2 \log(x)}{3-\log (x)}} \overset{*}\implies e^{2}$$
 	   $$ \overset{*}\implies \lim_\limits{ x \to 0^+ } \frac{2 \log x}{3 - \log x} \left( = \frac{\infty}{\infty} \right)\overset{L'H} = \lim_\limits{ x \to 0^+ } \frac{\frac{2}{x}}{\frac{1}{x}} = \lim_\limits{ x \to 0^+ } \frac{2 \cancel{x}}{\cancel{x}} = 2 \overset{*}\implies $$
+---
 # 1.3 Continuidad de funciones
+##### Definición
+Sea $I$ un intercalo de extremos $a,b: a < b$:
+- $f: I \longrightarrow \mathbb{R}$ es **continua** en $x_{0} \in (a,b)$ si $\lim_\limits{ x \to x_{0} } f(x) = f(x_{0})$, o lo que es lo mismo, $$ \forall \varepsilon > 0, \exists \delta > 0 : 0 < |x - x_{0}| < \delta \implies 0 < |f(x) - f(x_{0})| < \varepsilon$$
+- $f$ es **continua en** $a$ (y respectivamente en $b$) si $\exists f(a)$ (o $f(b)$) tal que ${} \lim_\limits{ x \to a^{+} } f(x) = f(a) {}$ (y respectivamente para ${} \lim_\limits{ x \to b^{-} } f(x) = f(b) {}$).
+- $f$ es continua en $I$ si lo es para $\forall x \in I$.
+##### Propiedades locales
+Si $f$ es continua en $x_{0}$
+- $f$ está acotada en un intervalo que contiene a $x_{0}$.
+- Si $f(x_{0}) \neq 0$, entonces $f$ conserva el signo de $f(x_{0})$ en un intervalo que contiene a $x_{0}$.
+##### Propiedades algebraicas
+Sean $f$ y $g$ continuas en $x_{0}$ y $\lambda \in \mathbb{R}$
+- La suma de $f+g$ es continua en $x_{0}$.
+- $\lambda f$ es continua en $x_{0}$.
+- $fg$ es continua en $x_{0}$.
+- $f \circ g$ es continua en $x_{0}$ si $f$ es continua en $g(x_{0})$.
+- $f/g$ es continua en $x_{0}$ si $g(x_{0}) \neq 0$.
+- si $\exists f^{-1}(x)$ entonces $f^{-1}(x)$ es continua en $x_{0}$.
+##### Discontinuidades
+Sea $f: I \longrightarrow \mathbb{R}$ y $x_{0} \in I$. Se dice que $f$ es **discontinua en** $x_{0}$ si no es continua en $x_{0}$. Más aún,
+- $f$ tiene en una **discontinuidad finita en $x_{0}$** si $f$ está acotada en un intervalo que contiene a $x_{0}$. Se clasifican en:
+	- **Discontinuidad evitable** de $f$ en $x_{0}$ si $\exists f(x_{0})$ y $\exists \lim_\limits{ x \to x_{0} } f(x) \neq \pm \infty$, pero $\lim_\limits{ x \to x_{0} } f(x) \neq f(x_{0})$. 
+	- **Discontinuidad de salto finito** si $\exists \lim_\limits{ x \to x_{0}^{-} } f(x) \neq \exists \lim_\limits{ x \to x_{0}^{+} } f(x) \neq \pm \infty : \lim_\limits{ x \to x_{0}^{-} } \neq \lim_\limits{ x \to x_{0}^{+} }$. Al número $s = \lim_\limits{ x \to x_{0}^{+} } - \lim_\limits{ x \to x_{0}^{-} }$ se lo denomina **salto**.
+	- **Discontinuidad oscilatoria finita**. Por lo general, si no cumple ninguna de las anteriores.
+		*Ejemplo ilustrativo:* $$ \begin{cases} \sin\left( \frac{1}{x} \right) \text{ si } x\neq 0 \\[7px] 0 \text{ si } x = 0 \end{cases} $$
+```tikz
+\usepackage{tikz}
+\usepackage{pgfplots}
+
+\begin{document}
+
+\begin{tikzpicture}[scale=1.25]
+\begin{axis}[xmin= -1.5, xmax=1.5, axis lines = middle, yticklabels=\empty, xticklabels={\empty,-1,\empty,\empty,\empty,1,\empty}]
+\addplot[color=red, thick, samples = 500]{sin((1/x)r)};
+\end{axis}
+\end{tikzpicture}
+
+\end{document}
+```
+- $f$ tiene una **discontinuidad infinita en** $x_{0}$ si $\nexists I$ donde la función esté acotada.
+	- **Discontinuidad infinita pura** (o **polo**) si $\lim_\limits{ x \to x_{0} } f(x) = \pm \infty$.
+	- **Discontinuidad de salto infinito** si $\pm \infty = \lim_\limits{ x \to x_{0}^{\pm} } f(x) \neq \lim_\limits{ x \to x_{0}^{\mp} } f(x) = \{ \mp \infty, \lambda \in \mathbb{R} \}$.
+	- **Discontinuidad oscilatoria infinita**, por lo general si no satisface ninguna de las anteriores. *Ejemplo ilustrativo*.$$ \begin{cases} \frac{1}{x} \sin\left( \frac{1}{x} \right) \text{ si } x \neq 0 \\[7px]  0 \text{ si } x = 0 \end{cases} $$
+```tikz
+\usepackage{tikz}
+\usepackage{pgfplots}
+
+\begin{document}
+
+\begin{tikzpicture}[scale=1.25]
+\begin{axis}[xmin= -1.5, xmax=1.5, ymax=20, ymin=-20, axis lines = middle, yticklabels=\empty, xticklabels={\empty,-1,\empty,\empty,\empty,1,\empty}]
+\addplot[color=red, thick, samples = 500]{(1/x)*sin((1/x)r)};
+\end{axis}
+\end{tikzpicture}
+
+\end{document}
+```
+##### Teoremas en relación a la continuidad
+- **Bolzano**. Si $f$ es continua en $[a,b]$ y $f(a) \cdot f(b) < 0$, entonces $\exists c \in (a,b) : f(c) = 0$.
+- **Darboux** o **Teorema del Valor Medio (TVM)**. Si $f$ es continua en el intervalo $I$, entonces $f(I)$ es un intervalo. Más aún, si $I = [a,b]$, entonces $f$ recorre todos los valores entre el máximo y el mínimo ($a$ y $b$).
+- **Weierstrass**. Si $f$ es continua en $[a,b]$, entonces $f$ alcanza el máximo y el mínimo en $[a,b]$, es decir, $\exists x_{M}, x_{m} : f(x_{m}) \leq f(x) \leq f(x_{M}), \forall x \in [a,b]$.
+---

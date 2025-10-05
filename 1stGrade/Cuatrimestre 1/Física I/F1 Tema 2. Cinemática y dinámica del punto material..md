@@ -83,6 +83,7 @@
 - Por lo general y por el momento, se restringirá a movimientos unidireccionales con una sola $\vec{a}$. Tomamos, entonces, $\vec{a}(t) = a_{x}(t) \vec{i}, \; \vec{v}(t) = v_{x}(t) \vec{i}, \; \vec{r} (t) = x(t) \vec{i}$. Partiendo de que $\vec{a} = \frac{d\vec{v}}{dt}$, $$ \vec{a} = a_{x} \vec{i} = \frac{d}{dt} (v_{x} \vec{i}) \implies \frac{dv_{x}}{dt} = a_{x} \implies dv_{x} = a_{x} \, dt$$ Ahora, se puede comenzar a integrar. $$ \begin{gather} \int_{v_{x}(t_{0})}^{v(x)(t)} dv_{x} = \int_{t_{0}}^{t} a_{x}(t) \, dt \\[7px] v_{x}(t) - v_{x}(t_{0}) = \int_{t_{0}}^{t} a_{x} \, dt \\[7px] v_{x}(t) = v_{0}(t) + \int_{t_{0}}^{t} a_{x} \, dt \end{gather} $$
 - Por su parte, para $\vec{r} = \frac{d}{dt}\vec{v} \implies x(t) = \frac{d}{dt} v_{x}(t)$, $$ \begin{gather} \int_{x(t_{0})}^{x(t)} dx = \int_{t_{0}}^{t}v_{x}(t) \, dt = \int_{t_{0}}^{t} \left[ v_{x}(t_{0}) + \int_{t_{0}}^{t} a_{x}(t) \,dt \right] \,dt \\[7px] x(t) = x(t_{0}) + \underbrace{v_{x}(t_{0}) (t-t_{0})}_{v(t_{0}) = cte} + \iint_{t_{0}}^{t} a_{x} \,(dt)^{2} \end{gather} $$
 - Poniendo como caso particular $a_{x} = 0$, $$ \begin{gather} \boxed{v_{x}(t) = v_{x}(t_{0}) + a_{x}(t-t_{0})} \\[7px] x(t) = x(t_{0}) + v_{x}(t_{0})(t-t_{0}) + \int_{t_{0}}^{t} a_{x}(t-t_{0}) \,dt   = \boxed{x(t_{0}) + v_{x}(t-t_{0}) + \frac{1}{2}a(t-t_{0})^{2}} \end{gather} $$
+---
 # 2.3 Movimiento circular general
 ##### Magnitudes cinemáticas angulares
 - **Posición angular** $\varphi$. Ángulo de $\vec{r}$ con un eje coordenado. (SI) $[\varphi] = rad = \frac{m}{m} = 1$. 

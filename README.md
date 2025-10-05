@@ -9,17 +9,18 @@ Los apuntes están hechos en **[Obsidian](https://obsidian.md/)**, y si bien es 
   ```
   winget install Obsidian.Obsidian
   ```
-  Y aceptar la descarga cuando lo pida (escribiendo `Y + Enter`, no sé si en Windows es suficiente con sencillamente `Enter` como en APT).
+  Y aceptar la descarga cuando lo pida (escribiendo `Y` y presionando `Enter`).
 ### Uso de los apuntes
 ##### Propiedad
 - Son mis apuntes, pero me importa poco donde acaben, si no, no los subía a GitHub. Úsense con total libertad.
 ##### Descarga
 - A través de esta misma página de GitHub, en el [enlace de descarga del botón verde](https://github.com/aktoraUPM/Obsidian-1er-cuatri/archive/refs/heads/master.zip).
-- Con **Git**, para quien no sepa qué es, viene instalado en Mac y Linux, en Windows se puede instalar también fácilmente con winget a través de
+- Con **Git**, si no sabes qué es, viene instalado en Mac y Linux por defecto, en Windows se puede instalar también fácilmente con winget desde la terminal CMD a través del comando
   ```
   winget install Git.Git
   ```
-  Una vez instalado, basta con escribir en terminal
+  O sencillamente con el instalador de la [página oficial](https://gitforwindows.org/) de Git para Windows.
+  Una vez instalado, basta con escribir en la terminal CMD el comando
   ```
   git clone https://github.com/aktoraUPM/Obsidian-1er-cuatri.git
   ```
