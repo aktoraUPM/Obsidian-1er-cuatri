@@ -8,17 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "78fe2f89a81d7b49",
+            "id": "b1d16592ab67ce02",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1stGrade/Cuatrimestre 1/Cálculo infinitesimal/CI Tema 1. Funciones reales, límites y continuidad..md",
+                "file": "1stGrade/Cuatrimestre 1/Cálculo infinitesimal/CI Tema 2. Derivación de funciones..md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CI Tema 1. Funciones reales, límites y continuidad."
+              "title": "CI Tema 2. Derivación de funciones."
+            }
+          },
+          {
+            "id": "3054259a493b9376",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Untitled"
             }
           },
           {
@@ -49,8 +63,7 @@
               "title": "README"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -198,15 +211,17 @@
       "bases:Create new base": false
     }
   },
-  "active": "02fe562cff3d818f",
+  "active": "b1d16592ab67ce02",
   "lastOpenFiles": [
-    "1stGrade/Cuatrimestre 1/Cálculo infinitesimal/CI Tema 1. Funciones reales, límites y continuidad..md",
-    "1stGrade/Cuatrimestre 1/Cálculo infinitesimal/CI Tema 0. Preliminares.md",
+    "Untitled.md",
     "1stGrade/Cuatrimestre 1/Física I/F1 Tema 2. Cinemática y dinámica del punto material..md",
+    "1stGrade/Cuatrimestre 1/Cálculo infinitesimal/CI Tema 2. Derivación de funciones..md",
+    "1stGrade/Cuatrimestre 1/Cálculo infinitesimal/CI Tema 1. Funciones reales, límites y continuidad..md",
+    "README.md",
+    "1stGrade/Cuatrimestre 1/Cálculo infinitesimal/CI Tema 0. Preliminares.md",
     "1stGrade/Cuatrimestre 1/Expresión gráfica/Concepción espacial/EG_CE 0.1 Presentación.md",
     "1stGrade/Cuatrimestre 1/Física I/F1 Tema 1. Análisis dimensional..md",
     "1stGrade/Cuatrimestre 1/Álgebra lineal/AL Tema 1. Espacios vectoriales..md",
-    "README.md",
     "1stGrade/Cuatrimestre 1/Expresión gráfica/Concepción espacial/EG_CE 2025-09-19.md",
     "1stGrade/Cuatrimestre 1/Expresión gráfica/Normalización/EG_N Tema 1. Introducción a la normalización.md",
     "Cálculos variopintos y demás.md",

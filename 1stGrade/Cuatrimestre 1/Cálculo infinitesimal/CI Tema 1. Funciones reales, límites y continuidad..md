@@ -160,14 +160,14 @@ Sea $f: I \longrightarrow \mathbb{R}$ y $x_{0} \in I$. Se dice que $f$ es **disc
 
 \begin{document}
 
-\begin{tikzpicture}[scale=1.25]
+\begin{tikzpicture}[scale=1.35]
 \begin{axis}[xmin= -1.5, xmax=1.5, axis lines = middle, yticklabels=\empty, xticklabels={\empty,-1,\empty,\empty,\empty,1,\empty}]
-\addplot[color=red, thick, samples = 500]{sin((1/x)r)};
+\addplot[color=red, thick, samples = 500, domain=-1.5:1.5]{sin((1/x)r)};
 \end{axis}
 \end{tikzpicture}
 
 \end{document}
-```
+``` 
 - $f$ tiene una **discontinuidad infinita en** $x_{0}$ si $\nexists I$ donde la función esté acotada.
 	- **Discontinuidad infinita pura** (o **polo**) si $\lim_\limits{ x \to x_{0} } f(x) = \pm \infty$.
 	- **Discontinuidad de salto infinito** si $\pm \infty = \lim_\limits{ x \to x_{0}^{\pm} } f(x) \neq \lim_\limits{ x \to x_{0}^{\mp} } f(x) = \{ \mp \infty, \lambda \in \mathbb{R} \}$.
@@ -178,9 +178,9 @@ Sea $f: I \longrightarrow \mathbb{R}$ y $x_{0} \in I$. Se dice que $f$ es **disc
 
 \begin{document}
 
-\begin{tikzpicture}[scale=1.25]
-\begin{axis}[xmin= -1.5, xmax=1.5, ymax=20, ymin=-20, axis lines = middle, yticklabels=\empty, xticklabels={\empty,-1,\empty,\empty,\empty,1,\empty}]
-\addplot[color=red, thick, samples = 500]{(1/x)*sin((1/x)r)};
+\begin{tikzpicture}[scale=1.35]
+\begin{axis}[axis line style= {draw=gray}, xmin= -1.5, xmax=1.5, ymax=20, ymin=-20, axis lines = middle, yticklabels=\empty, xticklabels={\empty,-1,\empty,\empty,\empty,1,\empty}]
+\addplot[color=red, thick, samples = 500, domain=-1.5:1.5, restrict y to domain=-20:20]{(1/x)*sin((1/x)r)};
 \end{axis}
 \end{tikzpicture}
 
